@@ -12,3 +12,5 @@ instance/
 py/
 scratch/
 test_db.py
+.github/
+
