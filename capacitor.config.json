@@ -1,0 +1,10 @@
+{
+  "appId": "com.timematrix.app",
+  "appName": "Time Matrix",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

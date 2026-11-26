@@ -1,0 +1,1538 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Matrix</title>
+    <link rel="stylesheet" href="styles.css?v=2702" />
+  </head>
+  <body>
+    <section id="authView" class="auth-shell" aria-labelledby="authTitle">
+      <!-- LEFT SIDE: Showcase & Dynamic Eisenhower Gravity Sorter -->
+      <div class="auth-showcase">
+        <div class="auth-showcase-content">
+          <!-- Brand header -->
+          <div class="auth-showcase-header">
+            <div class="auth-showcase-brand">
+              <div class="auth-showcase-logo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <line x1="12" y1="3" x2="12" y2="21" />
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <circle cx="7.5" cy="7.5" r="1.5" fill="#ef4444" />
+                  <circle cx="16.5" cy="7.5" r="1.5" fill="#10b981" />
+                  <circle cx="7.5" cy="16.5" r="1.5" fill="#f59e0b" />
+                  <circle cx="16.5" cy="16.5" r="1.5" fill="#8b5cf6" />
+                </svg>
+              </div>
+              <span class="auth-showcase-brand-name" id="authTitle">Time Matrix</span>
+            </div>
+            <div class="auth-engine-pill">
+              <span class="engine-live-pulse"></span>
+              <span>Gravity Engine Active</span>
+            </div>
+          </div>
+
+          <!-- Hero Headline -->
+          <div class="auth-hero-text">
+            <h1 class="auth-showcase-title">Important work rises to the top, chaos gets sorted.</h1>
+            <p class="auth-showcase-sub">
+              Every demand is filtered into Eisenhower quadrants with laser precision. Protect high-impact focus and eliminate the noise.
+            </p>
+          </div>
+
+          <!-- The Dynamic Eisenhower Gravity Sorter Canvas -->
+          <div class="gravity-sorter-canvas">
+            <!-- Holographic Coordinate Axis Crosshairs -->
+            <div class="sorter-crosshair sorter-axis-x" aria-hidden="true">
+              <span class="axis-tag axis-urgent">← URGENT</span>
+              <span class="axis-tag axis-not-urgent">NOT URGENT →</span>
+            </div>
+            <div class="sorter-crosshair sorter-axis-y" aria-hidden="true">
+              <span class="axis-tag axis-important">↑ IMPORTANT</span>
+              <span class="axis-tag axis-not-important">NOT IMPORTANT ↓</span>
+            </div>
+            <div class="sorter-center-reticle" aria-hidden="true">
+              <div class="reticle-pulse"></div>
+            </div>
+
+            <!-- Sorter 4 Quadrant Target Zones -->
+            <div class="sorter-quadrants-grid">
+              <!-- Q1 Reactive -->
+              <div class="sorter-quad-card quad-reactive">
+                <div class="sorter-quad-header">
+                  <span class="quad-dot dot-reactive"></span>
+                  <span class="quad-label">Q1 · REACTIVE</span>
+                  <span class="quad-action-tag tag-reactive">MANAGE</span>
+                </div>
+                <div class="sorter-task-pill task-reactive">
+                  <span class="task-icon">🔥</span>
+                  <div class="task-info">
+                    <span class="task-title">Server Outage</span>
+                    <span class="task-meta">Immediate Fire</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q2 Proactive (Hero Focus Zone) -->
+              <div class="sorter-quad-card quad-proactive">
+                <div class="sorter-quad-header">
+                  <span class="quad-dot dot-proactive"></span>
+                  <span class="quad-label">Q2 · PROACTIVE</span>
+                  <span class="quad-action-tag tag-proactive">FOCUS</span>
+                </div>
+                <div class="sorter-task-pill task-proactive">
+                  <span class="task-icon">⚡</span>
+                  <div class="task-info">
+                    <span class="task-title">Q4 AI Core Architecture</span>
+                    <span class="task-meta">Deep Work · 90m Sprint</span>
+                  </div>
+                  <span class="task-live-badge">✓ Active</span>
+                </div>
+              </div>
+
+              <!-- Q3 Deceptive -->
+              <div class="sorter-quad-card quad-deceptive">
+                <div class="sorter-quad-header">
+                  <span class="quad-dot dot-deceptive"></span>
+                  <span class="quad-label">Q3 · DECEPTIVE</span>
+                  <span class="quad-action-tag tag-deceptive">REDUCE</span>
+                </div>
+                <div class="sorter-task-pill task-deceptive">
+                  <span class="task-icon">⏳</span>
+                  <div class="task-info">
+                    <span class="task-title">Random Vendor Pitch</span>
+                    <span class="task-meta">Deflected</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q4 Escapist -->
+              <div class="sorter-quad-card quad-escapist">
+                <div class="sorter-quad-header">
+                  <span class="quad-dot dot-escapist"></span>
+                  <span class="quad-label">Q4 · ESCAPIST</span>
+                  <span class="quad-action-tag tag-escapist">AVOID</span>
+                </div>
+                <div class="sorter-task-pill task-escapist">
+                  <span class="task-icon">🚫</span>
+                  <div class="task-info">
+                    <span class="task-title">Social Media Doomscroll</span>
+                    <span class="task-meta">Filtered Out</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Animated Laser Beams SVG Overlay -->
+            <svg class="sorter-beam-svg" viewBox="0 0 540 280" preserveAspectRatio="none" aria-hidden="true">
+              <path class="laser-line laser-q1" d="M 270 140 C 230 110, 180 85, 140 80" />
+              <path class="laser-line laser-q2" d="M 270 140 C 310 110, 360 85, 400 80" />
+              <path class="laser-line laser-q3" d="M 270 140 C 230 170, 180 195, 140 200" />
+              <path class="laser-line laser-q4" d="M 270 140 C 310 170, 360 195, 400 200" />
+            </svg>
+
+            <!-- Floating Inbound Task Particle Capsule -->
+            <div class="sorter-flying-capsule" aria-hidden="true">
+              <span class="capsule-sparkle">✦</span>
+              <span>Sorting Task...</span>
+            </div>
+          </div>
+
+          <!-- Telemetry HUD Bottom Bar -->
+          <div class="sorter-telemetry-bar">
+            <div class="telemetry-item">
+              <span class="telemetry-label">Focus Share</span>
+              <span class="telemetry-value val-emerald">84% 🟢</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">High-Impact Focus</span>
+              <span class="telemetry-value val-cyan">3h 45m</span>
+            </div>
+            <div class="telemetry-divider"></div>
+            <div class="telemetry-item">
+              <span class="telemetry-label">Noise Eliminated</span>
+              <span class="telemetry-value val-amber">-2h 15m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Crisp White / Light Auth Panel -->
+      <div class="auth-panel">
+        <div class="auth-card">
+          <div class="auth-mode-tabs" role="tablist" aria-label="Account mode">
+            <button class="auth-mode is-active" type="button" data-auth-mode="login">Sign in</button>
+            <button class="auth-mode" type="button" data-auth-mode="register">Create account</button>
+          </div>
+
+          <!-- Sign In Form -->
+          <form id="loginForm" class="auth-form">
+            <div class="auth-form-header">
+              <h2>Sign in</h2>
+              <p>Welcome back.</p>
+            </div>
+
+            <label>
+              <span>Email</span>
+              <div class="auth-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="auth-input-icon" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <input type="email" name="email" autocomplete="email" placeholder="you@company.com" required />
+              </div>
+            </label>
+
+            <label>
+              <span>Password</span>
+              <div class="auth-input-wrap password-field">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="auth-input-icon" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <input type="password" name="password" autocomplete="current-password" placeholder="••••••••" required />
+                <button class="password-toggle" type="button" data-password-toggle title="Show password" aria-label="Show password">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </button>
+              </div>
+            </label>
+
+            <button class="primary-button auth-submit" type="submit">
+              <span>Sign in</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+
+            <div class="auth-footer-prompt">
+              <span>Don't have an account?</span>
+              <button type="button" class="auth-text-link" data-auth-mode="register">Create an account</button>
+            </div>
+          </form>
+
+          <!-- Create Account Form -->
+          <form id="registerForm" class="auth-form is-hidden">
+            <div class="auth-form-header">
+              <h2>Create account</h2>
+              <p>Start organizing your life in quadrants.</p>
+            </div>
+
+            <label>
+              <span>Full Name</span>
+              <div class="auth-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="auth-input-icon" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+                <input type="text" name="name" autocomplete="name" maxlength="60" placeholder="e.g. Farhan" required />
+              </div>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <div class="auth-input-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="auth-input-icon" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <input type="email" name="email" autocomplete="email" placeholder="you@company.com" required />
+              </div>
+            </label>
+
+            <label>
+              <span>Password</span>
+              <div class="auth-input-wrap password-field">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="auth-input-icon" aria-hidden="true">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <input type="password" name="password" autocomplete="new-password" minlength="6" placeholder="At least 6 characters" required />
+                <button class="password-toggle" type="button" data-password-toggle title="Show password" aria-label="Show password">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </button>
+              </div>
+            </label>
+
+            <label>
+              <span>Confirm Password</span>
+              <div class="auth-input-wrap password-field">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="auth-input-icon" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <input type="password" name="confirmPassword" autocomplete="new-password" minlength="6" placeholder="Repeat your password" required />
+                <button class="password-toggle" type="button" data-password-toggle title="Show password" aria-label="Show password">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </button>
+              </div>
+            </label>
+
+            <button class="primary-button auth-submit" type="submit">
+              <span>Create account</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width:16px;height:16px;" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+
+            <div class="auth-footer-prompt">
+              <span>Already have an account?</span>
+              <button type="button" class="auth-text-link" data-auth-mode="login">Sign in</button>
+            </div>
+          </form>
+
+          <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <div id="appShell" class="app-shell is-hidden">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">
+            <span>TM</span>
+          </div>
+          <div>
+            <h1>Time Matrix</h1>
+            <p id="todayLabel">Daily quadrant board</p>
+          </div>
+        </div>
+
+        <nav class="view-tabs" aria-label="Application views">
+          <button class="tab-button is-active" type="button" data-view="matrix">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" />
+            </svg>
+            <span>Matrix</span>
+            <span class="tab-badge" id="matrixTabBadge" style="display:none;"></span>
+          </button>
+          <button class="tab-button" type="button" data-view="bucket">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2;">
+              <circle cx="12" cy="12" r="9" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+            <span>Bucket List</span>
+          </button>
+          <button class="tab-button" type="button" data-view="goalTracker">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2;">
+              <circle cx="12" cy="12" r="9" />
+              <circle cx="12" cy="12" r="5" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+            <span>Goal Tracker</span>
+          </button>
+        </nav>
+
+        <div class="topbar-actions">
+          <button id="cmdPaletteTriggerBtn" class="topbar-action-btn cmd-palette-trigger" type="button" title="Quick Command Palette (Ctrl+K)">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2.2;">
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-4.2-4.2" />
+            </svg>
+            <span class="cmd-trigger-text">Commands</span>
+            <kbd class="cmd-kbd-badge">Ctrl K</kbd>
+          </button>
+
+          <button id="topbarPomodoroBtn" class="topbar-action-btn pomodoro-topbar-btn" type="button" title="Deep Work Focus Timer">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2.2;">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3 2" />
+            </svg>
+            <span class="pomo-btn-text">Focus</span>
+          </button>
+
+          <div class="conference-panel">
+            <button id="confNotesButton" class="topbar-action-btn conf-notes-btn" type="button" aria-expanded="false" aria-controls="confNotesPopup" title="Conference Note Taker">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="fill: none; stroke: currentColor; stroke-width: 2.2; width: 16px; height: 16px; display: block;">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+              <strong class="conf-btn-text">Notes</strong>
+            </button>
+            <div id="confNotesPopup" class="conf-notes-popup is-hidden">
+              <div class="conf-popup-header">
+                <h4>Conference Notes</h4>
+                <button id="confPopupClose" class="conf-popup-close" type="button" title="Close notes" aria-label="Close notes">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+                </button>
+              </div>
+              <form id="confAddForm" class="conf-add-form">
+                <input id="confAddInput" type="text" placeholder="Add person's name..." maxlength="50" required autocomplete="off" />
+                <button class="conf-add-button" type="submit">Add</button>
+              </form>
+              <div id="confPeopleList" class="conf-people-list">
+                <!-- People list will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+
+          <div class="topbar-separator"></div>
+
+          <a href="/api/download-apk" class="topbar-action-btn icon-only-btn" title="Download Android App" style="text-decoration: none;">
+            <svg viewBox="0 0 24 24" style="width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2.2; display: block;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+          </a>
+
+          <div class="theme-panel-wrap">
+            <button id="themePickerButton" class="topbar-action-btn theme-picker-btn icon-only-btn" type="button" aria-expanded="false" title="Open Theme Studio">
+              <svg viewBox="0 0 24 24" style="width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; display: block;">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+              </svg>
+            </button>
+            <div id="themePickerDropdown" class="theme-studio-modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="themeStudioTitle">
+              <div class="theme-studio-header">
+                <div>
+                  <h4 id="themeStudioTitle">Theme Studio</h4>
+                  <p>Curated atmospheres with reactive lighting</p>
+                </div>
+                <div class="theme-studio-header-right">
+                  <div class="theme-category-tabs">
+                    <button type="button" class="theme-cat-btn is-active" data-cat="all">All (7)</button>
+                    <button type="button" class="theme-cat-btn" data-cat="dark">Dark (2)</button>
+                    <button type="button" class="theme-cat-btn" data-cat="light">Light (5)</button>
+                  </div>
+                  <button type="button" id="themeStudioClose" class="theme-studio-close-btn" aria-label="Close theme studio">
+                    <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="theme-studio-grid">
+                <!-- 1. Midnight Obsidian (Dark Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="obsidian" data-theme-cat="dark">
+                  <div class="swatch-preview" style="background: #070b12; border-color: #1e293b;">
+                    <div class="swatch-mock-topbar" style="background: #0e1626; border-color: #334155;">
+                      <span class="swatch-dot" style="background: #38bdf8;"></span>
+                      <span class="swatch-pill" style="background: #162035;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #0e1626; border-top-color: #ef4444;"></div>
+                      <div class="swatch-mock-card" style="background: #0e1626; border-top-color: #10b981;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Midnight Obsidian</strong>
+                      <span class="swatch-badge dark-badge">Dark</span>
+                    </div>
+                    <p class="swatch-tagline">Deep space & cyber cyan glow</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+
+                <!-- 2. Emerald Matrix (Dark Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="emerald" data-theme-cat="dark">
+                  <div class="swatch-preview" style="background: #03120d; border-color: #064e3b;">
+                    <div class="swatch-mock-topbar" style="background: #072217; border-color: #047857;">
+                      <span class="swatch-dot" style="background: #10b981;"></span>
+                      <span class="swatch-pill" style="background: #0d3424;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #072217; border-top-color: #f87171;"></div>
+                      <div class="swatch-mock-card" style="background: #072217; border-top-color: #34d399;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Emerald Matrix</strong>
+                      <span class="swatch-badge dark-badge">Dark</span>
+                    </div>
+                    <p class="swatch-tagline">Bespoke cyber forest & mint luxury</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+
+                <!-- 3. Silicon Pearl (Light Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="light" data-theme-cat="light">
+                  <div class="swatch-preview" style="background: #f8fafc; border-color: #e2e8f0;">
+                    <div class="swatch-mock-topbar" style="background: #ffffff; border-color: #e2e8f0;">
+                      <span class="swatch-dot" style="background: #2563eb;"></span>
+                      <span class="swatch-pill" style="background: #f1f5f9;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #ef4444;"></div>
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #10b981;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Silicon Pearl</strong>
+                      <span class="swatch-badge light-badge">Light</span>
+                    </div>
+                    <p class="swatch-tagline">Apple Keynote & Cupertino clean</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+
+                <!-- 4. Nordic Birch (Light Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="nordic" data-theme-cat="light">
+                  <div class="swatch-preview" style="background: #fbfaf7; border-color: #e7e0d3;">
+                    <div class="swatch-mock-topbar" style="background: #ffffff; border-color: #e7e0d3;">
+                      <span class="swatch-dot" style="background: #c2410c;"></span>
+                      <span class="swatch-pill" style="background: #f5f0e6;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #dc2626;"></div>
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #15803d;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Nordic Birch</strong>
+                      <span class="swatch-badge light-badge">Light</span>
+                    </div>
+                    <p class="swatch-tagline">Warm unbleached paper & Notion luxe</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+
+                <!-- 5. Linear Frost (Light Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="linear" data-theme-cat="light">
+                  <div class="swatch-preview" style="background: #f1f5f9; border-color: #cbd5e1;">
+                    <div class="swatch-mock-topbar" style="background: #ffffff; border-color: #cbd5e1;">
+                      <span class="swatch-dot" style="background: #6366f1;"></span>
+                      <span class="swatch-pill" style="background: #e2e8f0;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #e11d48;"></div>
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #0d9488;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Linear Frost</strong>
+                      <span class="swatch-badge light-badge">Light</span>
+                    </div>
+                    <p class="swatch-tagline">Silver titanium & Raycast violet</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+
+                <!-- 6. Matcha Studio (Light Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="matcha" data-theme-cat="light">
+                  <div class="swatch-preview" style="background: #f3f7f4; border-color: #c4d5c7;">
+                    <div class="swatch-mock-topbar" style="background: #ffffff; border-color: #c4d5c7;">
+                      <span class="swatch-dot" style="background: #059669;"></span>
+                      <span class="swatch-pill" style="background: #eaf2ec;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #e11d48;"></div>
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #059669;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Matcha Studio</strong>
+                      <span class="swatch-badge light-badge">Light</span>
+                    </div>
+                    <p class="swatch-tagline">Zen ceramic & sage wellness mist</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+
+                <!-- 7. Sunset Alabaster (Light Champion) -->
+                <button type="button" class="theme-swatch-card" data-theme-id="sunset" data-theme-cat="light">
+                  <div class="swatch-preview" style="background: #fffaf5; border-color: #fbd5b5;">
+                    <div class="swatch-mock-topbar" style="background: #ffffff; border-color: #fed7aa;">
+                      <span class="swatch-dot" style="background: #ea580c;"></span>
+                      <span class="swatch-pill" style="background: #fff1e6;"></span>
+                    </div>
+                    <div class="swatch-mock-body">
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #e11d48;"></div>
+                      <div class="swatch-mock-card" style="background: #ffffff; border-top-color: #16a34a;"></div>
+                    </div>
+                  </div>
+                  <div class="swatch-meta">
+                    <div class="swatch-title-row">
+                      <strong class="swatch-title">Sunset Alabaster</strong>
+                      <span class="swatch-badge light-badge">Light</span>
+                    </div>
+                    <p class="swatch-tagline">Golden hour pearl & coral amber glow</p>
+                  </div>
+                  <span class="swatch-active-indicator" aria-hidden="true">✓</span>
+                </button>
+              </div>
+
+              <div class="theme-studio-footer">
+                <span>Hover over any swatch for <strong>Live Workspace Preview</strong></span>
+                <kbd>Esc to Close</kbd>
+              </div>
+            </div>
+          </div>
+
+          <div class="account-panel">
+            <button id="accountButton" class="account-button" type="button" aria-expanded="false" aria-controls="accountMenu">
+              <span id="accountInitials">U</span>
+              <strong id="accountName">User Profile</strong>
+            </button>
+              <div id="accountMenu" class="account-menu is-hidden">
+                <div class="account-menu-header">
+                  <h4>Account & Profile</h4>
+                  <p>Manage your account settings</p>
+                </div>
+
+                <form id="profileForm" class="profile-form">
+                  <label>
+                    Name
+                    <input id="profileName" type="text" name="name" maxlength="60" required />
+                  </label>
+                  <label>
+                    Email
+                    <input id="profileEmail" type="email" name="email" required />
+                  </label>
+                  <button class="small-action-button" type="submit">Save Profile</button>
+                </form>
+
+                <div class="account-apk-section" style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line);">
+                  <a href="/api/download-apk" download="TimeMatrix.apk" class="account-apk-download-btn" title="Download Time Matrix Android App (.apk)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2.2; width:16px; height:16px;">
+                      <path d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1" />
+                      <path d="M12 4v12m0 0l-4-4m4 4l4-4" />
+                    </svg>
+                    <span>Download Android App (.apk)</span>
+                  </a>
+                </div>
+
+                <button id="logoutButton" class="small-action-button danger" type="button" style="margin-top: 12px;">Logout</button>
+              </div>
+            </div>
+          </div>
+      </header>
+
+      <main>
+        <section id="matrixView" class="view-panel">
+          <!-- Matrix Inner Sub-Nav Bar with Inline Report Controls -->
+          <div class="matrix-subnav-bar no-print" style="display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: space-between !important; gap: 16px !important; margin-bottom: 10px !important; width: 100% !important; flex-wrap: nowrap !important;">
+            <div class="matrix-subnav-tabs" style="display: inline-flex !important; align-items: center !important; gap: 6px !important; margin: 0 !important; flex-shrink: 0 !important;">
+              <button type="button" class="matrix-subnav-btn is-active" id="matrixSubtabBoard" data-matrix-tab="board">
+                <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2; width:16px; height:16px;">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 12h18M12 3v18" />
+                </svg>
+                <span>Matrix Board</span>
+              </button>
+              <button type="button" class="matrix-subnav-btn" id="matrixSubtabReport" data-matrix-tab="report">
+                <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2; width:16px; height:16px;">
+                  <path d="M5 3h10l4 4v14H5z" />
+                  <path d="M14 3v5h5" />
+                  <path d="M8 13h8M8 17h6" />
+                </svg>
+                <span>Matrix Report & Analytics</span>
+              </button>
+            </div>
+
+            <div id="matrixReportActions" class="matrix-subnav-actions is-hidden" style="display: inline-flex !important; flex-direction: row !important; align-items: center !important; justify-content: flex-end !important; gap: 10px !important; margin: 0 !important; flex-shrink: 0 !important;">
+              <label class="select-field">
+                <span>Range</span>
+                <select id="reportRange">
+                  <option value="all">All completed</option>
+                  <option value="today">Today</option>
+                  <option value="week">Last 7 days</option>
+                  <option value="month">Last 30 days</option>
+                </select>
+              </label>
+              <button class="primary-button" type="button" id="printButton">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9V3h12v6" />
+                  <path d="M6 17H4v-6h16v6h-2" />
+                  <path d="M7 14h10v7H7z" />
+                </svg>
+                <span>Print</span>
+              </button>
+              <button class="icon-button" type="button" id="clearCompletedButton" title="Clear completed report tasks" aria-label="Clear completed report tasks">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 7h16M10 11v6M14 11v6M8 7l1-3h6l1 3M6 7l1 14h10l1-14" />
+                </svg>
+                <span>Clear Report</span>
+              </button>
+            </div>
+          </div>
+
+          <div id="matrixBoardPanel" class="matrix-tab-panel">
+            <div class="metric-strip" id="matrixMetrics"></div>
+            <div class="insight-panel" id="matrixInsight"></div>
+
+            <section class="board-section" aria-labelledby="matrixTitle">
+              <div class="section-heading">
+                <div class="section-title">
+                  <h2 id="matrixTitle">Active Matrix</h2>
+                  <p>Important work rises to the top. Urgent work stays on the left.</p>
+                </div>
+                <form id="globalSearchForm" class="global-search" role="search" aria-label="Search all quadrants">
+                  <label class="global-search-field">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="m20 20-4.2-4.2" />
+                    </svg>
+                    <input id="globalTaskSearch" type="search" autocomplete="off" placeholder="Search all quadrants" aria-label="Search all quadrants" />
+                  </label>
+                  <button class="global-search-button" type="submit" title="Search all quadrants" aria-label="Search all quadrants">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="11" cy="11" r="7" />
+                      <path d="m20 20-4.2-4.2" />
+                    </svg>
+                  </button>
+                </form>
+                <div class="button-row">
+                  <!-- Futuristic Multi-Engine Perspective Switcher -->
+                  <div class="matrix-perspective-switcher" id="matrixPerspectiveSwitcher" role="radiogroup" aria-label="Matrix Perspective Mode">
+                    <button type="button" class="matrix-perspective-btn is-active" data-matrix-perspective="bento" title="Adaptive Bento Grid">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="3" width="7" height="11" rx="1.5" />
+                        <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                        <rect x="14" y="18" width="7" height="3" rx="1" />
+                      </svg>
+                      <span>Bento</span>
+                    </button>
+                    <button type="button" class="matrix-perspective-btn" data-matrix-perspective="radar" title="Celestial Orbital Radar">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="3" x2="12" y2="21" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                      </svg>
+                      <span>Radar</span>
+                    </button>
+                    <button type="button" class="matrix-perspective-btn" data-matrix-perspective="horizon" title="Horizon Flow Stream">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                        <circle cx="7" cy="6" r="2" fill="currentColor" />
+                        <circle cx="15" cy="12" r="2" fill="currentColor" />
+                        <circle cx="11" cy="18" r="2" fill="currentColor" />
+                      </svg>
+                      <span>Horizon</span>
+                    </button>
+                  </div>
+
+                  <button class="icon-button" type="button" id="compactToggle" title="Toggle compact tasks" aria-label="Toggle compact tasks" aria-pressed="false">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M4 7h16M4 12h16M4 17h16" />
+                    </svg>
+                    <span>Compact</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Quick Focus Filter Strip for Adaptive Bento -->
+              <div class="matrix-focus-dock no-print" id="matrixFocusDock">
+                <span class="focus-dock-label">FOCUS LENS:</span>
+                <button type="button" class="focus-dock-pill is-active" data-focus-quadrant="all">
+                  <span class="focus-pill-dot dot-all"></span>
+                  <span>All Matrix</span>
+                </button>
+                <button type="button" class="focus-dock-pill" data-focus-quadrant="proactive">
+                  <span class="focus-pill-dot dot-proactive"></span>
+                  <span>🔥 Q2 Proactive (Deep Work)</span>
+                </button>
+                <button type="button" class="focus-dock-pill" data-focus-quadrant="reactive">
+                  <span class="focus-pill-dot dot-reactive"></span>
+                  <span>🚨 Q1 Reactive (Crisis)</span>
+                </button>
+                <button type="button" class="focus-dock-pill" data-focus-quadrant="deceptive">
+                  <span class="focus-pill-dot dot-deceptive"></span>
+                  <span>⏳ Q3 Deceptive (Delegate)</span>
+                </button>
+                <button type="button" class="focus-dock-pill" data-focus-quadrant="escapist">
+                  <span class="focus-pill-dot dot-escapist"></span>
+                  <span>💤 Q4 Escapist (Eliminate)</span>
+                </button>
+              </div>
+
+              <div class="matrix-wrap" id="matrixWrap">
+                <div class="axis axis-y axis-y-top">Important</div>
+                <div class="axis axis-y axis-y-bottom">Not So Important</div>
+                <div class="axis axis-y axis-y-right axis-y-right-top">Important</div>
+                <div class="axis axis-y axis-y-right axis-y-right-bottom">Not Important</div>
+                <div class="axis axis-x axis-x-top axis-x-left">Urgent</div>
+                <div class="axis axis-x axis-x-top axis-x-right">Not So Urgent</div>
+                <div class="axis axis-x axis-x-bottom axis-x-left">Urgent</div>
+                <div class="axis axis-x axis-x-bottom axis-x-right">Not Urgent</div>
+                <div id="matrixBoard" class="matrix-board"></div>
+              </div>
+
+              <!-- Celestial Orbital Radar Container (Futuristic HUD) -->
+              <div id="matrixRadarContainer" class="matrix-radar-container is-hidden"></div>
+
+              <!-- Horizon Flow Stream Container (Chronological Daily Execution) -->
+              <div id="matrixHorizonContainer" class="matrix-horizon-container is-hidden"></div>
+            </section>
+          </div>
+
+          <div id="matrixReportInnerPanel" class="matrix-tab-panel is-hidden">
+
+            <div class="metric-strip" id="reportMetrics"></div>
+            <div class="insight-panel" id="reportInsight"></div>
+
+            <section class="board-section report-paper" aria-labelledby="reportTitle">
+              <div class="section-heading">
+                <div>
+                  <h2 id="reportTitle">Completion Report</h2>
+                  <p id="reportSubtitle">Completed tasks keep the quadrant where they were finished.</p>
+                </div>
+              </div>
+
+              <div class="matrix-wrap report-wrap">
+                <div class="axis axis-y axis-y-top">Important</div>
+                <div class="axis axis-y axis-y-bottom">Not So Important</div>
+                <div class="axis axis-y axis-y-right axis-y-right-top">Important</div>
+                <div class="axis axis-y axis-y-right axis-y-right-bottom">Not Important</div>
+                <div class="axis axis-x axis-x-top axis-x-left">Urgent</div>
+                <div class="axis axis-x axis-x-top axis-x-right">Not So Urgent</div>
+                <div class="axis axis-x axis-x-bottom axis-x-left">Urgent</div>
+                <div class="axis axis-x axis-x-bottom axis-x-right">Not Urgent</div>
+                <div id="reportBoard" class="matrix-board report-board"></div>
+              </div>
+            </section>
+              <div class="section-heading">
+                <div>
+                  <h2>Completed Meeting Notes</h2>
+                  <p>Archive of checked reference notes grouped by person.</p>
+                </div>
+              </div>
+              <div class="report-notes-container" id="reportNotesContainer">
+                <!-- Completed notes will be rendered dynamically -->
+              </div>
+            </div>
+          </section>
+
+        <section id="bucketView" class="view-panel is-hidden">
+          <div class="bucket-header-banner">
+            <div class="bucket-header-info">
+              <div class="bucket-title-row">
+                <div class="bucket-title-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+                  </svg>
+                </div>
+                <h2>Bucket List Quadrants</h2>
+              </div>
+              <p>Organize your long-term life vision into custom quadrants (e.g. Family, Career, Health, Travel).</p>
+            </div>
+            <button class="primary-button bucket-create-quad-btn" type="button" id="addBucketQuadrantBtn">
+              <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2.4; width:18px; height:18px;">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+              <span>Create Quadrant</span>
+            </button>
+          </div>
+
+          <div class="metric-strip" id="bucketMetrics"></div>
+
+          <div id="bucketQuadrantsGrid" class="bucket-quadrants-grid">
+            <!-- Dynamic Bucket Quadrants rendered here -->
+          </div>
+        </section>
+
+        <section id="goalTrackerView" class="view-panel is-hidden">
+          <div class="report-actions gt-top-actions">
+            <div>
+              <h2 style="margin: 0; font-size: 1.5rem; font-weight: 800; color: var(--ink);">Goal Tracker</h2>
+            </div>
+            <div class="gt-action-group">
+              <div class="gt-view-switch-wrap" style="display: flex; align-items: center; background: var(--surface-2, #f1f5f9); padding: 3px; border-radius: 10px; border: 1px solid var(--line);">
+                <button type="button" id="gtViewMonthlyBtn" class="gt-view-btn is-active">
+                  <svg class="gt-btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;margin-right:6px;vertical-align:-2px;">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <line x1="3" y1="9" x2="21" y2="9"/>
+                    <line x1="9" y1="21" x2="9" y2="9"/>
+                  </svg>
+                  <span>Monthly Sheet</span>
+                </button>
+                <button type="button" id="gtViewYearlyBtn" class="gt-view-btn">
+                  <svg class="gt-btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;margin-right:6px;vertical-align:-2px;">
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
+                    <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>
+                  </svg>
+                  <span>Yearly Dashboard</span>
+                </button>
+              </div>
+              <div id="gtMonthlyControlsGroup" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                <div class="gt-month-nav-wrap">
+                  <button class="gt-month-nav-btn" type="button" id="gtPrevMonthBtn" title="Previous Month (←)" aria-label="Previous Month">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+                  </button>
+                  <label class="gt-month-picker-label">
+                    <span class="gt-month-picker-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </span>
+                    <input type="month" id="gtMonthPicker" class="gt-month-picker-input" />
+                  </label>
+                  <button class="gt-month-nav-btn" type="button" id="gtNextMonthBtn" title="Next Month (→)" aria-label="Next Month">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                  </button>
+                </div>
+                <button class="primary-button gt-primary-action" type="button" id="addGtTaskBtn">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2.2; width:18px; height:18px;">
+                    <path d="M12 5v14M5 12h14" />
+                  </svg>
+                  <span>Add Habit Task</span>
+                </button>
+                <button class="secondary-button gt-secondary-action" type="button" id="printGtBtn" title="Print Monthly Tracker Sheet">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none; stroke:currentColor; stroke-width:2; width:18px; height:18px;">
+                    <path d="M6 9V3h12v6" />
+                    <path d="M6 17H4v-6h16v6h-2" />
+                    <path d="M7 14h10v7H7z" />
+                  </svg>
+                  <span>Print Sheet</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Goal Tracker Sheet Printable Template Card -->
+          <div id="goalTrackerCard" class="goal-tracker-card theme-pastel">
+            <header class="gt-card-header">
+              <div class="gt-header-inputs">
+                <div class="gt-input-field gt-goal-field">
+                  <div class="gt-field-icon-plate plate-blue" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <circle cx="12" cy="12" r="6"/>
+                      <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                  </div>
+                  <div class="gt-field-content">
+                    <span class="gt-field-kicker">MONTHLY FOCUS OBJECTIVE</span>
+                    <input type="text" id="gtGoalTitleInput" class="gt-banner-input" placeholder="Write your primary monthly focus or consistency target..." maxlength="120" />
+                  </div>
+                </div>
+                <div class="gt-input-field gt-month-field">
+                  <div class="gt-field-icon-plate plate-amber" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                  <div class="gt-field-content">
+                    <span class="gt-field-kicker">TRACKING PERIOD</span>
+                    <input type="text" id="gtMonthYearInput" class="gt-banner-input" placeholder="e.g. November 2026" maxlength="40" />
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <div class="gt-card-body">
+              <div class="gt-table-wrapper">
+                <table class="gt-table" id="gtTable">
+                  <colgroup id="gtColgroup"></colgroup>
+                  <thead>
+                    <tr class="gt-table-main-header">
+                      <th class="col-task gt-head-cell" rowspan="2">
+                        <div class="gt-head-capsule">
+                          <div class="gt-head-icon-plate plate-blue" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M9 11l3 3L22 4"/>
+                              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                            </svg>
+                          </div>
+                          <div class="gt-head-text-group">
+                            <span class="gt-head-kicker">ROUTINE</span>
+                            <strong class="gt-head-title">Habit Task</strong>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="col-uom gt-head-cell" rowspan="2">
+                        <div class="gt-head-capsule-compact">
+                          <span class="gt-head-kicker">CADENCE</span>
+                          <strong class="gt-head-title">Unit / Freq</strong>
+                        </div>
+                      </th>
+                      <th class="col-score gt-head-cell" rowspan="2">
+                        <div class="gt-head-capsule-compact">
+                          <span class="gt-head-kicker">TARGET</span>
+                          <strong class="gt-head-title">Points</strong>
+                        </div>
+                      </th>
+                      <th class="col-days-header gt-head-days-master" id="gtDaysHeaderColspan" colspan="31">
+                        <div class="gt-days-master-wrap">
+                          <div class="gt-days-master-left">
+                            <svg class="gt-calendar-mini-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <rect x="3" y="4" width="18" height="18" rx="2"/>
+                              <line x1="16" y1="2" x2="16" y2="6"/>
+                              <line x1="8" y1="2" x2="8" y2="6"/>
+                              <line x1="3" y1="10" x2="21" y2="10"/>
+                            </svg>
+                            <span class="gt-days-master-title">MONTHLY ACTIVITY TIMELINE</span>
+                          </div>
+                          <div class="gt-days-master-legend no-print">
+                            <span class="gt-legend-item"><span class="gt-legend-dot dot-perfect"></span><span>Full</span></span>
+                            <span class="gt-legend-item"><span class="gt-legend-dot dot-partial"></span><span>Partial</span></span>
+                            <span class="gt-legend-item"><span class="gt-legend-dot dot-today"></span><span>Today</span></span>
+                          </div>
+                        </div>
+                      </th>
+                      <th class="col-actions gt-head-cell no-print" rowspan="2">
+                        <div class="gt-head-capsule-compact">
+                          <span class="gt-head-kicker">MANAGE</span>
+                          <strong class="gt-head-title">Actions</strong>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr class="gt-days-subnav" id="gtDaysSubnavHeader">
+                      <!-- Month Days headers generated dynamically by JS with ZERO dummy ghost cells! -->
+                    </tr>
+                  </thead>
+                  <tbody id="gtTableBody">
+                    <!-- Dynamic task rows rendered here -->
+                  </tbody>
+                  <tfoot id="gtTableFoot">
+                    <!-- Dynamic daywise totals & percentage summary rows rendered here -->
+                  </tfoot>
+                </table>
+              </div>
+
+              <!-- Daywise Breakdown Analytics Strip -->
+              <div class="gt-daywise-strip" id="gtDaywiseStrip">
+                <div class="gt-daywise-card">
+                  <div class="gt-daywise-icon-plate plate-blue">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </div>
+                  <div class="gt-daywise-info">
+                    <span class="gt-daywise-label">Today</span>
+                    <strong id="gtTodaySummaryVal">0 / 0 pts (0%)</strong>
+                  </div>
+                </div>
+                <div class="gt-daywise-card">
+                  <div class="gt-daywise-icon-plate plate-amber">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>
+                  </div>
+                  <div class="gt-daywise-info">
+                    <span class="gt-daywise-label">Best Day</span>
+                    <strong id="gtBestDayVal">Day 1 (0 pts)</strong>
+                  </div>
+                </div>
+                <div class="gt-daywise-card">
+                  <div class="gt-daywise-icon-plate plate-coral">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                    </svg>
+                  </div>
+                  <div class="gt-daywise-info">
+                    <span class="gt-daywise-label">Active Days</span>
+                    <strong id="gtActiveDaysVal">0 Active Days</strong>
+                  </div>
+                </div>
+                <div class="gt-daywise-card">
+                  <div class="gt-daywise-icon-plate plate-emerald">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="18" y1="20" x2="18" y2="10"/>
+                      <line x1="12" y1="20" x2="12" y2="4"/>
+                      <line x1="6" y1="20" x2="6" y2="14"/>
+                    </svg>
+                  </div>
+                  <div class="gt-daywise-info">
+                    <span class="gt-daywise-label">Daily Avg</span>
+                    <strong id="gtDailyAvgVal">0 pts / day</strong>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Month-over-Month Comparison & Performance Growth Card -->
+              <div class="gt-month-compare-card" id="gtMonthCompareCard">
+                <div class="gt-compare-header">
+                  <div class="gt-compare-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;margin-right:4px;">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                      <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                    <span>Monthly Momentum</span>
+                  </div>
+                  <span class="gt-compare-subtitle" id="gtCompareSubtitle">vs Previous Month</span>
+                </div>
+                <div class="gt-compare-grid">
+                  <div class="gt-compare-item">
+                    <span class="gt-compare-label">Total Score</span>
+                    <strong class="gt-compare-value" id="gtCompareScoreVal">0 pts</strong>
+                    <span class="gt-compare-change" id="gtCompareScoreDiff">vs Prev: 0 pts</span>
+                  </div>
+                  <div class="gt-compare-item">
+                    <span class="gt-compare-label">Completion</span>
+                    <strong class="gt-compare-value" id="gtCompareRateVal">0%</strong>
+                    <span class="gt-compare-change" id="gtCompareRateDiff">vs Prev Month: 0%</span>
+                  </div>
+                  <div class="gt-compare-item">
+                    <span class="gt-compare-label">ACTIVE DAYS</span>
+                    <strong class="gt-compare-value" id="gtCompareActiveVal">0 Days</strong>
+                    <span class="gt-compare-change" id="gtCompareActiveDiff">vs Prev Month: 0 Days</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gt-card-footer">
+                <div class="gt-footer-notes">
+                  <div class="gt-footer-box-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gt-stat-icon" style="width:16px;height:16px;margin-right:6px;stroke:var(--accent);">
+                      <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+                      <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+                    </svg>
+                    <strong>MONTHLY NOTES & REFLECTIONS</strong>
+                  </div>
+                  <textarea id="gtNotesInput" placeholder="Write your monthly observations, reflections, or daily notes..." rows="3" maxlength="800"></textarea>
+                </div>
+
+                <div class="gt-footer-stats-grid">
+                  <div class="gt-stat-card score-card">
+                    <div class="gt-stat-title">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gt-stat-icon" style="width:16px;height:16px;margin-right:6px;stroke:#f59e0b;">
+                        <circle cx="12" cy="8" r="7"/>
+                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
+                      </svg>
+                      <strong>TOTAL SCORE</strong>
+                    </div>
+                    <div class="gt-score-display">
+                      <div class="gt-earned-val" id="gtEarnedScore">0</div>
+                      <div class="gt-max-slash">/</div>
+                      <div class="gt-max-val" id="gtMaxScore">1,200</div>
+                    </div>
+                    <span class="gt-stat-subtext">Earned / Total Points</span>
+                  </div>
+
+                  <div class="gt-stat-card progress-card">
+                    <div class="gt-stat-title">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gt-stat-icon" style="width:16px;height:16px;margin-right:6px;stroke:#10b981;">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                      </svg>
+                      <strong>MONTHLY PERFORMANCE</strong>
+                    </div>
+                    <div class="gt-progress-wrap">
+                      <div class="gt-progress-percent" id="gtProgressPercent">0%</div>
+                      <div class="gt-progress-bar-bg">
+                        <div class="gt-progress-bar-fill" id="gtProgressBarFill" style="width: 0%;"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gt-stat-card reward-card">
+                    <div class="gt-stat-title">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="gt-stat-icon" style="width:16px;height:16px;margin-right:6px;stroke:#8b5cf6;">
+                        <polyline points="20 12 20 22 4 22 4 12"/>
+                        <rect x="2" y="7" width="20" height="5"/>
+                        <line x1="12" y1="22" x2="12" y2="7"/>
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/>
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>
+                      </svg>
+                      <strong>MONTHLY REWARD</strong>
+                    </div>
+                    <textarea id="gtRewardInput" placeholder="Set a reward for achieving your monthly target score..." rows="2" maxlength="200"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Goal Tracker Executive Yearly Dashboard -->
+          <div id="gtYearlyDashboardContainer" class="gt-yearly-dashboard is-hidden">
+            <!-- Dynamic Yearly Dashboard content rendered here by JS -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div
+      id="quadrantModal"
+      class="quadrant-modal is-hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="quadrantModalTitle"
+      aria-describedby="quadrantModalSubtitle"
+    >
+      <div class="quadrant-modal-backdrop" data-close-quadrant-modal></div>
+      <section class="quadrant-modal-panel">
+        <header class="quadrant-modal-header">
+          <div>
+            <span id="quadrantModalMode" class="modal-kicker">Matrix</span>
+            <h2 id="quadrantModalTitle">Quadrant</h2>
+            <p id="quadrantModalSubtitle"></p>
+          </div>
+          <div class="quadrant-modal-actions">
+            <div id="quadrantTaskViewToggle" class="task-view-toggle" role="group" aria-label="Task view">
+              <button type="button" data-task-view="compact">Compact</button>
+              <button type="button" data-task-view="detailed">Detailed</button>
+            </div>
+            <button
+              id="quadrantModalClose"
+              class="quadrant-modal-close"
+              type="button"
+              data-close-quadrant-modal
+              title="Close quadrant popup"
+              aria-label="Close quadrant popup"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 6 6 18M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </header>
+        <div id="quadrantModalStats" class="quadrant-modal-stats"></div>
+        <div id="quadrantModalBody" class="quadrant-modal-body"></div>
+      </section>
+    </div>
+
+    <!-- Bucket Quadrant Modal -->
+    <div id="bucketQuadrantModal" class="quadrant-modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="bucketQuadModalTitle">
+      <div class="quadrant-modal-backdrop" data-close-bucket-quad-modal></div>
+      <section class="quadrant-modal-panel bucket-modal-panel">
+        <header class="quadrant-modal-header">
+          <div>
+            <span class="modal-kicker">Bucket List</span>
+            <h2 id="bucketQuadModalTitle">Create Bucket Quadrant</h2>
+          </div>
+          <button class="quadrant-modal-close" type="button" data-close-bucket-quad-modal title="Close modal" aria-label="Close modal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+          </button>
+        </header>
+        <form id="bucketQuadrantForm" class="bucket-modal-form">
+          <input type="hidden" id="bucketQuadIdInput" name="id" />
+          <label>
+            Quadrant Title / Category Name
+            <input type="text" id="bucketQuadTitleInput" name="title" placeholder="e.g. Family, Career, Health, Travel..." maxlength="60" required />
+          </label>
+          <label>
+            Theme Color Accent
+            <div class="color-picker-row">
+              <input type="color" id="bucketQuadColorInput" name="color" value="#3b82f6" />
+              <span class="color-hint">Select custom badge color</span>
+            </div>
+          </label>
+          <div class="modal-footer-actions">
+            <button class="danger-button small-action-button is-hidden" type="button" id="bucketQuadModalDeleteBtn">Delete Quadrant</button>
+            <button class="small-action-button" type="button" data-close-bucket-quad-modal>Cancel</button>
+            <button class="primary-button" type="submit">Save Quadrant</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Bucket Item Modal -->
+    <div id="bucketItemModal" class="quadrant-modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="bucketItemModalTitle">
+      <div class="quadrant-modal-backdrop" data-close-bucket-item-modal></div>
+      <section class="quadrant-modal-panel bucket-modal-panel">
+        <header class="quadrant-modal-header">
+          <div>
+            <span class="modal-kicker" id="bucketItemModalQuadName">Bucket Quadrant</span>
+            <h2 id="bucketItemModalTitle">Add Bucket Goal</h2>
+          </div>
+          <button class="quadrant-modal-close" type="button" data-close-bucket-item-modal title="Close modal" aria-label="Close modal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+          </button>
+        </header>
+        <form id="bucketItemForm" class="bucket-modal-form">
+          <input type="hidden" id="bucketItemQuadIdInput" name="quadrantId" />
+          <input type="hidden" id="bucketItemIdInput" name="id" />
+          <label>
+            Goal Title
+            <input type="text" id="bucketItemTitleInput" name="title" placeholder="e.g. Buy a home for family, Travel to Europe..." maxlength="120" required />
+          </label>
+          <label>
+            Goal / Target Date
+            <input type="date" id="bucketItemGoalDateInput" name="goalDate" required />
+          </label>
+          <label>
+            Remarks & Target Details
+            <textarea id="bucketItemRemarksInput" name="remarks" placeholder="Add specific notes, budget, or action steps..." rows="3" maxlength="500"></textarea>
+          </label>
+          <div class="created-date-preview" id="bucketItemCreatedDateDisplay"></div>
+          <div class="modal-footer-actions">
+            <button class="danger-button small-action-button is-hidden" type="button" id="bucketItemModalDeleteBtn">Delete Goal</button>
+            <button class="small-action-button" type="button" data-close-bucket-item-modal>Cancel</button>
+            <button class="primary-button" type="submit">Save Goal</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Goal Tracker Day Detail Breakdown Modal -->
+    <div id="gtDayDetailModal" class="quadrant-modal is-hidden" role="dialog" aria-modal="true" aria-labelledby="gtDayDetailTitle">
+      <div class="quadrant-modal-backdrop" data-close-gt-day-modal></div>
+      <section class="quadrant-modal-panel gt-day-modal-panel">
+        <!-- Modal Top Navigation Bar -->
+        <header class="gt-day-modal-header">
+          <div class="gt-day-header-left">
+            <div class="gt-day-kicker-capsule">
+              <span class="gt-day-kicker-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </span>
+              <span class="gt-day-kicker-label">Day Details</span>
+              <span class="gt-day-kicker-badge" id="gtDayModalIndexBadge">Day 30</span>
+            </div>
+            <h2 id="gtDayDetailTitle" class="gt-day-title">Monday, November 30, 2026</h2>
+          </div>
+          <div class="gt-day-header-actions">
+            <!-- Quick Steppers for Day Navigation -->
+            <div class="gt-day-nav-arrows">
+              <button type="button" id="gtDayPrevBtn" class="gt-day-arrow-btn" title="Previous Day (←)" aria-label="Previous Day">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button type="button" id="gtDayNextBtn" class="gt-day-arrow-btn" title="Next Day (→)" aria-label="Next Day">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+            <button class="gt-day-modal-close-btn" type="button" data-close-gt-day-modal title="Close breakdown (Esc)" aria-label="Close breakdown">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12" /></svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="gt-day-modal-body">
+          <!-- Hero Performance Card -->
+          <div class="gt-day-summary-banner" id="gtDaySummaryBanner">
+            <!-- Dynamic KPI summary: score, %, progress track, status pill rendered by JS -->
+          </div>
+
+          <!-- Section Toolbar with Title and Quick Batch Actions -->
+          <div class="gt-day-checklist-toolbar">
+            <div class="gt-day-toolbar-title">
+              <span class="gt-day-toolbar-text">Habit Actions</span>
+              <span class="gt-day-toolbar-count" id="gtDayHabitCount">5 habits</span>
+            </div>
+            <div class="gt-day-toolbar-actions">
+              <button type="button" id="gtDayMarkAllBtn" class="gt-day-batch-btn gt-batch-all" title="Mark all habits completed for this day">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Check All</span>
+              </button>
+              <button type="button" id="gtDayResetBtn" class="gt-day-batch-btn gt-batch-reset" title="Reset all scores to 0 for this day">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg>
+                <span>Reset</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Dynamic Task Cards List -->
+          <div class="gt-day-checklist-list" id="gtDayChecklistList">
+            <!-- Dynamic task cards rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <footer class="gt-day-modal-footer">
+          <div class="gt-day-footer-hint">
+            <span class="gt-kbd-hint"><kbd>←</kbd><kbd>→</kbd> Navigate</span>
+            <span class="gt-kbd-hint"><kbd>Esc</kbd> Close</span>
+          </div>
+          <button type="button" class="gt-day-done-btn" data-close-gt-day-modal>
+            <span>Done</span>
+          </button>
+        </footer>
+      </section>
+    </div>
+
+    <!-- Type 1: Side-by-Side Cockpit Floating Score Adjuster (Cyber Dial + Precision Slider) -->
+    <div id="gtCellFloatBar" class="gt-cell-float-bar gt-cockpit-bar is-hidden">
+      <div class="gt-cockpit-content">
+        <!-- Left: Glowing Cyber Arc Dial -->
+        <div class="gt-cockpit-dial-wrap">
+          <svg class="gt-cockpit-dial-svg" viewBox="0 0 54 54">
+            <circle cx="27" cy="27" r="22" class="gt-dial-bg-circle"></circle>
+            <circle id="gtCockpitDialArc" cx="27" cy="27" r="22" stroke-dasharray="138.23" stroke-dashoffset="0" class="gt-dial-arc-circle"></circle>
+          </svg>
+          <div class="gt-cockpit-dial-center">
+            <span id="gtCockpitDialNum" class="gt-dial-led-num">0</span>
+            <span class="gt-dial-led-label">PTS</span>
+          </div>
+        </div>
+
+        <!-- Right: Precision Slider Controls -->
+        <div class="gt-cockpit-main">
+          <!-- Top Row: Habit Title + Day Tag + Badge + Max -->
+          <div class="gt-cockpit-header">
+            <div class="gt-cockpit-title-wrap">
+              <span id="gtCockpitHabitTitle" class="gt-cockpit-habit-title">Habit</span>
+              <span class="gt-cockpit-day-tag" id="gtFloatTitle">Day 1</span>
+            </div>
+            <div class="gt-cockpit-status-wrap">
+              <span id="gtCockpitPctBadge" class="gt-cockpit-pct-badge">0%</span>
+              <span class="gt-cockpit-max-pts">Max: <strong id="gtFloatMaxScore">10</strong></span>
+            </div>
+          </div>
+
+          <!-- Middle Row: Precision Slider with Steppers -->
+          <div class="gt-cockpit-slider-row">
+            <button type="button" id="gtFloatDecBtn" class="gt-cockpit-step-btn" title="Decrease 1 pt">−</button>
+            <div class="gt-cockpit-range-wrap">
+              <input type="range" id="gtCockpitRangeInput" min="0" max="10" step="1" value="0" class="gt-cockpit-slider" />
+              <input type="number" id="gtFloatInput" min="0" max="100" class="gt-cockpit-hidden-input" style="display:none;" />
+              <div class="gt-cockpit-notches">
+                <span>0</span>
+                <span>25%</span>
+                <span>50%</span>
+                <span>75%</span>
+                <span>Max</span>
+              </div>
+            </div>
+            <button type="button" id="gtFloatIncBtn" class="gt-cockpit-step-btn" title="Increase 1 pt">+</button>
+          </div>
+
+          <!-- Bottom Row: Quick Presets & Done Action -->
+          <div class="gt-cockpit-footer">
+            <div class="gt-cockpit-chips">
+              <button type="button" class="gt-float-chip" data-pct="0">0 Reset</button>
+              <button type="button" class="gt-float-chip" data-pct="50">½ Half</button>
+              <button type="button" class="gt-float-chip" data-pct="100">Full</button>
+            </div>
+            <button type="button" id="gtFloatSaveBtn" class="gt-cockpit-done-btn" title="Confirm score">
+              <span>Done</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="width:13px;height:13px;"><path d="M20 6 9 17l-5-5"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="gt-cell-float-arrow gt-cockpit-arrow"></div>
+    </div>
+
+    <!-- Back-to-top floating button -->
+    <button id="backToTopBtn" class="back-to-top-btn is-hidden" type="button" title="Back to top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:2.5;width:18px;height:18px;">
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </button>
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99999;display:none;"></canvas>
+
+    <!-- ============================================================
+         Command Palette (Spotlight / Raycast-style)
+         ============================================================ -->
+    <div id="commandPaletteModal" class="cmd-palette-backdrop is-hidden" role="dialog" aria-modal="true" aria-label="Command Palette">
+      <div class="cmd-palette-card">
+        <div class="cmd-palette-search-wrap">
+          <svg viewBox="0 0 24 24" class="cmd-palette-icon" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2" />
+            <path d="m20 20-4.2-4.2" fill="none" stroke="currentColor" stroke-width="2.2" />
+          </svg>
+          <input id="cmdPaletteInput" type="text" placeholder="Type a command, search tasks, switch themes..." autocomplete="off" spellcheck="false" />
+          <kbd class="cmd-kbd-esc" id="cmdPaletteCloseKey">Esc</kbd>
+        </div>
+        <div class="cmd-palette-results" id="cmdPaletteResults">
+          <!-- Populated dynamically via JS -->
+        </div>
+        <div class="cmd-palette-footer">
+          <span><kbd>↑</kbd> <kbd>↓</kbd> Navigate</span>
+          <span><kbd>↵</kbd> Select</span>
+          <span><kbd>Esc</kbd> Close</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         Deep Work Pomodoro Focus Modal
+         ============================================================ -->
+    <div id="pomodoroFocusModal" class="pomodoro-modal-backdrop is-hidden" role="dialog" aria-modal="true" aria-label="Deep Work Focus Timer">
+      <div class="pomodoro-card">
+        <header class="pomodoro-header">
+          <div class="pomodoro-title-wrap">
+            <span class="pomodoro-badge">⚡ Deep Work Session</span>
+            <h3 id="pomoTaskTitle">Active Focus Session</h3>
+            <span class="pomodoro-quadrant-tag" id="pomoQuadrantTag">Proactive (Q2)</span>
+          </div>
+          <button id="pomoModalClose" class="pomodoro-close-btn" type="button" title="Minimize / Close Timer" aria-label="Close">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+          </button>
+        </header>
+
+        <div class="pomodoro-timer-stage">
+          <div class="pomodoro-circle-wrap">
+            <svg class="pomodoro-svg" viewBox="0 0 240 240">
+              <circle class="pomodoro-track" cx="120" cy="120" r="100" />
+              <circle class="pomodoro-progress" id="pomoProgressCircle" cx="120" cy="120" r="100" />
+            </svg>
+            <div class="pomodoro-time-display">
+              <span class="pomodoro-digits" id="pomoTimeDigits">25:00</span>
+              <span class="pomodoro-phase-label" id="pomoPhaseLabel">Focus Mode</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pomodoro-presets-row">
+          <button type="button" class="pomo-preset-btn is-active" data-mins="25">25m Focus</button>
+          <button type="button" class="pomo-preset-btn" data-mins="50">50m Deep</button>
+          <button type="button" class="pomo-preset-btn" data-mins="5">5m Rest</button>
+          <button type="button" class="pomo-preset-btn" data-mins="15">15m Break</button>
+        </div>
+
+        <div class="pomodoro-sound-row">
+          <label class="pomo-sound-label">
+            <span>🎧 Soundscape:</span>
+            <select id="pomoSoundSelect">
+              <option value="none">Off (Silent)</option>
+              <option value="rain">🌧️ Soothing Rain</option>
+              <option value="waves">🌊 Deep Ocean Waves</option>
+              <option value="hum">🧘 Alpha Brainwave Hum</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="pomodoro-controls">
+          <button id="pomoResetBtn" class="pomo-ctrl-btn secondary" type="button" title="Reset Session">
+            <svg viewBox="0 0 24 24" aria-hidden="true" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" /><path d="M3 3v5h5" /></svg>
+          </button>
+          <button id="pomoPlayPauseBtn" class="pomo-ctrl-btn primary" type="button">
+            <svg id="pomoPlayIcon" viewBox="0 0 24 24" aria-hidden="true" style="width:20px;height:20px;fill:currentColor;"><polygon points="6 3 20 12 6 21 6 3" /></svg>
+            <svg id="pomoPauseIcon" viewBox="0 0 24 24" aria-hidden="true" class="is-hidden" style="width:20px;height:20px;fill:currentColor;"><rect x="6" y="4" width="4" height="16" /><rect x="14" y="4" width="4" height="16" /></svg>
+            <span id="pomoPlayPauseText">Start Focus</span>
+          </button>
+          <button id="pomoAdd5mBtn" class="pomo-ctrl-btn secondary" type="button" title="Add 5 Minutes">+5m</button>
+        </div>
+
+        <div class="pomodoro-footer-actions">
+          <button id="pomoFinishLogBtn" class="pomo-log-btn" type="button">
+            ✓ Log Tracked Minutes & Save
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Mini-Timer Widget (Visible when timer is active and modal is minimized) -->
+    <div id="pomodoroMiniPill" class="pomodoro-mini-pill is-hidden" title="Click to expand Focus Timer">
+      <div class="mini-pomo-pulse"></div>
+      <svg viewBox="0 0 24 24" class="mini-pomo-icon" aria-hidden="true" style="width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+      <span class="mini-pomo-time" id="miniPomoTime">25:00</span>
+      <span class="mini-pomo-task" id="miniPomoTask">Focus</span>
+      <button class="mini-pomo-btn" id="miniPomoToggleBtn" type="button" title="Pause / Resume">⏸</button>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script>
+      // Auto-detect server URL from current page origin.
+      // For Android APK, this will be overridden by localStorage tm_server_url if set.
+      window.TIME_MATRIX_SERVER_URL = "http://49.12.190.43:10000";
+    </script>
+    <script src="app.js?v=2702"></script>
+  </body>
+</html>
